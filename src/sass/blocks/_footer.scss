@@ -1,0 +1,106 @@
+.footer {
+    background-color: #00c2f0;
+    min-height: 400px;
+    padding: 50px 0 40px 0;
+
+    @media (max-width: 1200px) {
+        padding: 50px 10px 40px 10px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 24px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media (max-width: 991px) {
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__menu {
+        list-style: none;
+        padding: 0;
+        &-item {
+            margin-top: 10px;
+            line-height: 10px;
+
+            @media (max-width: 767px) {
+                margin-top: 12px;
+            }
+
+        }
+        &-link {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    &-company {
+        width: 377px;
+        height: 248px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+        &__logo {
+            margin: 20px 0;
+        }
+
+        @media (max-width: 991px) {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    }
+    &-modules {
+
+        @media (max-width: 767px) {
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 575px) {
+            margin-top: 20px;
+        }
+    }
+
+    &-industry {
+
+        @media (max-width: 991px) {
+            margin-right: 120px;
+        }
+
+        @media (max-width: 767px) {
+            text-align: center;
+            margin-right: 20px;
+        }
+
+    }
+
+    &-about {
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    &__rights {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        text-align: center;
+    }
+}
