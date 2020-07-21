@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    background-color: grey;
 }
 
 hr {
@@ -21,9 +20,11 @@ hr {
     position: relative;
     width: 1140px;
     margin: 0 auto;
+
     @media (max-width: 1200px) {
         width: 100%;
     }
+    
 }
 
 @import 'blocks/header';
@@ -37,5 +38,6 @@ hr {
 @import 'blocks/modal';
 @import 'blocks/buttons';
 @import 'blocks/pageup';
+@import 'blocks/hamburger';
 
 

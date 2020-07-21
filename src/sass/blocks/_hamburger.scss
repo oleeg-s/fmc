@@ -1,0 +1,40 @@
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    width: 35px;
+    height: 20px;
+    z-index: 1;
+    transition: all .5s;
+    span {
+        display: block;
+        height: 2px;
+        width: 30px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        transition: .6s all;
+    }
+    &_active {
+        top: 40px;
+        right: 170px;
+        z-index: 11;
+        span {
+            margin-bottom: -2px;
+            &:nth-child(1) {
+                transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
+    }
+    
+    @media (max-width: 575px) {
+        display: block;
+    }
+
+}

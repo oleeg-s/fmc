@@ -4,6 +4,7 @@
     align-items: center;
     margin-top: 19px;
     margin-bottom: 16px;
+    transition: all 0.5s;
 
     @media (max-width: 1200px) {
         padding: 0 10px;
@@ -11,8 +12,18 @@
     }
 
     @media (max-width: 767px) {
+        position: absolute;
+        background-color: lightskyblue;
         justify-content: space-around;
         flex-wrap: wrap;
+        z-index: 10;
+        left: 0;
+        margin: 0;
+        transform: translateY(-100%);
+    }
+
+    &_active {
+        transform: translateY(0);
     }
 
     &-item {
@@ -53,4 +64,21 @@
             margin-bottom: 3px;
         }
     }
+}
+
+.country-btn {
+    display: none;
+    position: absolute;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;;
+    background: #00c2f0;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+    
 }
